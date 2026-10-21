@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Imkoniyatlar akademiyasi — Logopediya</title>
+<style>
+:root{--ink:#14284b;--muted:#5a6b8c;--p:#0fa3a3;--p2:#3ccfcf;--pale:#e6f7f7;--co:#ff7a6b;--sun:#ffc23d;--vio:#7c6cf0;--line:#dfeaf0;--bg:#f7fcfd;--card:#fff;--r:24px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8f1ff;--muted:#a3b3d1;--pale:#12303a;--line:#223a4d;--bg:#0b1722;--card:#112332}}
+html{scroll-behavior:smooth;scroll-padding-top:84px;height:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;font-family:"Segoe UI",Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+@keyframes fl{50%{transform:translateY(-14px)}}@keyframes rg{0%{transform:scale(.5);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+@keyframes wv{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}@keyframes gr{to{background-position:200% 0}}
+@keyframes sh{to{transform:translateX(260%) skewX(-20deg)}}@keyframes pop{0%{transform:scale(.6)}60%{transform:scale(1.3)}100%{transform:scale(1)}}
+@keyframes bl{50%{opacity:0}}@keyframes wg{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}@keyframes in{from{opacity:0;transform:translateY(16px)}}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:70px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.1;font-size:16px}
+.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--p),var(--vio));display:grid;place-items:center;font-size:24px;animation:wg 3s ease-in-out infinite}
+.links{display:flex;gap:4px;font-size:14px;font-weight:600}.links a{padding:8px 12px;border-radius:12px;transition:.2s}.links a:hover{background:var(--pale);color:var(--p)}
+.lang{display:flex;background:var(--pale);border-radius:99px;padding:3px}.lang button{border:0;background:none;font:inherit;font-weight:800;font-size:13px;padding:7px 13px;border-radius:99px;cursor:pointer;color:var(--muted);transition:.25s}.lang button.on{background:var(--p);color:#fff;box-shadow:0 4px 12px #0fa3a355}
+.mb{display:none}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;border:0;border-radius:14px;padding:14px 24px;font:inherit;font-weight:700;cursor:pointer;background:linear-gradient(135deg,var(--p),var(--vio));color:#fff;box-shadow:0 10px 26px #0fa3a345;transition:.25s}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:#fff5;transform:skewX(-20deg);animation:sh 3.2s infinite}
+.btn:hover{transform:translateY(-3px)}.btn.s{background:var(--card);color:var(--p);border:1px solid var(--line);box-shadow:none}.btn.s::after{display:none}
+.hero{position:relative;padding:70px 0 70px;overflow:hidden;background:radial-gradient(circle at 90% 10%,#bff3f0 0,transparent 35%),radial-gradient(circle at 5% 90%,#ffe0da 0,transparent 32%),linear-gradient(135deg,var(--bg),var(--pale))}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eb{display:inline-flex;gap:8px;background:var(--pale);color:var(--p);padding:8px 15px;border-radius:99px;font-size:13px;font-weight:800}
+h1{font-size:clamp(36px,5.2vw,62px);line-height:1.05;letter-spacing:-2px;margin:20px 0 16px}
+h1 span{background:linear-gradient(90deg,var(--p),var(--vio),var(--co),var(--p));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gr 6s linear infinite}
+.hero p.l{color:var(--muted);font-size:17.5px;max-width:600px}.acts{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 14px}.sm{font-size:12.5px;color:var(--muted)}
+.badge{display:inline-flex;gap:6px;background:#fff3d6;color:#8a5a00;font-size:12px;font-weight:800;padding:4px 11px;border-radius:99px}
+.art{position:relative;aspect-ratio:1;max-width:430px;margin:auto;width:100%;display:grid;place-items:center}
+.ring{position:absolute;inset:18%;border-radius:50%;border:3px solid var(--p2);animation:rg 3.6s ease-out infinite}.ring:nth-child(2){animation-delay:1.2s}.ring:nth-child(3){animation-delay:2.4s}
+.core{position:relative;width:46%;aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--vio));display:grid;place-items:center;font-size:clamp(48px,8vw,80px);box-shadow:0 24px 60px #0fa3a355;animation:fl 4s ease-in-out infinite}
+.bub{position:absolute;background:var(--card);border-radius:18px 18px 18px 4px;padding:10px 16px;font-weight:800;box-shadow:0 14px 34px #14284b22;font-size:15px;animation:fl 4s ease-in-out infinite}
+.bub.b1{top:6%;left:0}.bub.b2{bottom:10%;right:-2%;border-radius:18px 18px 4px 18px;animation-delay:-2s;color:var(--co)}
+.bub i{display:inline-block;width:2px;height:1em;background:var(--p);margin-left:3px;vertical-align:-.15em;animation:bl 1s infinite}
+.lt{position:absolute;font-weight:900;font-size:34px;animation:fl 5s ease-in-out infinite;opacity:.9}
+.wave{position:absolute;bottom:-6%;display:flex;gap:5px;align-items:center;height:50px}.wave b{width:6px;height:100%;border-radius:9px;background:linear-gradient(var(--p2),var(--vio));animation:wv 1.1s ease-in-out infinite}
+.stats{margin-top:-30px;position:relative;z-index:2}.sr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 20px 50px #14284b14}
+.stat{display:flex;gap:14px;align-items:center;padding:6px 12px}.stat em{font-style:normal;font-size:38px;animation:fl 3s ease-in-out infinite}.stat b{display:block;font-size:18px;line-height:1.25}.stat span{font-size:13px;color:var(--muted)}
+.sec{padding:74px 0}.sh{max-width:700px;margin-bottom:30px}.sh h2{font-size:clamp(28px,3.4vw,40px);line-height:1.12;letter-spacing:-1px;margin:0 0 10px}.sh p{color:var(--muted);margin:0}
+.tag{display:block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--p);margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:transform .3s,box-shadow .3s;transform-style:preserve-3d}
+.card:hover{box-shadow:0 26px 50px #0fa3a326;border-color:var(--p2)}.card .ic{width:62px;height:62px;border-radius:20px;background:var(--pale);display:grid;place-items:center;font-size:34px;margin-bottom:16px;transition:.4s}.card:hover .ic{transform:rotate(-10deg) scale(1.12)}
+.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.soft{background:var(--pale)}.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.steps{display:grid;gap:12px}.step{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);padding:16px;border-radius:18px;transition:.25s}.step:hover{transform:translateX(6px);border-color:var(--p2)}
+.num{flex:0 0 38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--p),var(--vio));color:#fff;display:grid;place-items:center;font-weight:800}.done .num{background:var(--co)}
+.step h3{font-size:15.5px;margin:0 0 2px}.step p{font-size:14px;color:var(--muted);margin:0}
+.app{background:var(--card);border:1px solid var(--line);border-radius:32px;padding:34px;box-shadow:0 28px 70px #0fa3a31c;min-height:380px}.app>*{animation:in .5s both}
+.prog{height:10px;background:var(--pale);border-radius:99px;overflow:hidden;margin-bottom:8px}.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--co));border-radius:99px;transition:width .6s}
+.qn{font-size:13px;color:var(--muted);font-weight:700;margin-bottom:16px}.app h3{font-size:clamp(21px,2.6vw,28px);line-height:1.25;margin:0 0 20px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.opt{font:inherit;text-align:left;padding:16px 18px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);cursor:pointer;font-weight:600;color:var(--ink);transition:.2s}.opt:hover,.opt.sel{border-color:var(--p);background:var(--pale);transform:translateY(-3px)}
+.ctr{text-align:center;max-width:560px;margin:auto}.ctr .big{font-size:84px;display:block;animation:fl 3s infinite}.ctr p{color:var(--muted)}.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.row.c{justify-content:center}
+.link{background:none;border:0;font:inherit;font-weight:700;color:var(--p);cursor:pointer;padding:8px}
+.dirs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.dir{position:relative;font:inherit;text-align:left;padding:24px;border-radius:22px;border:1.5px solid var(--line);background:var(--card);cursor:pointer;transition:.25s;color:var(--ink)}
+.dir:hover:not(.lock){transform:translateY(-6px);border-color:var(--p);box-shadow:0 20px 40px #0fa3a326}.dir em{font-style:normal;font-size:46px;display:block;margin-bottom:10px}.dir b{display:block;font-size:18px;margin-bottom:6px}.dir span.d{font-size:13.5px;color:var(--muted)}.dir.lock{opacity:.55;cursor:not-allowed}.dir .badge{position:absolute;top:14px;right:14px}
+.tips{display:grid;gap:10px;margin:0 0 26px;padding:0;list-style:none}.tips li{display:flex;gap:12px;background:var(--pale);border-radius:16px;padding:14px 16px;font-size:14.5px}.tips em{font-style:normal;font-size:22px}
+.vg{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.vid{border:1px solid var(--line);border-radius:22px;overflow:hidden}.vb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--pale),#ffe7e2);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px}.vb video,.vb iframe{width:100%;height:100%;border:0}.vb em{font-style:normal;font-size:50px;display:block;animation:fl 3s infinite}
+.vi{padding:16px 18px}.vi h4{margin:0 0 4px}.vi p{margin:0 0 10px;font-size:13.5px;color:var(--muted)}
+.stars{display:flex;align-items:center}.stars button{border:0;background:none;font-size:28px;cursor:pointer;color:#c8d3dd;padding:2px;transition:.15s}.stars button.on{color:var(--sun);animation:pop .4s}.stars button:hover{transform:scale(1.25)}.stars small{margin-left:8px;color:var(--muted);font-size:12px}
+.fb{margin-top:26px;background:var(--pale);border-radius:22px;padding:22px}.fb h4{margin:0 0 8px}textarea{font:inherit;width:100%;min-height:90px;border:1.5px solid var(--line);border-radius:13px;padding:13px;background:var(--card);color:var(--ink);margin:12px 0}textarea:focus{outline:0;border-color:var(--p);box-shadow:0 0 0 4px #0fa3a322}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:18px}.kpi{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}.kpi b{font-size:34px;display:block;line-height:1.1}.kpi span{font-size:13px;color:var(--muted)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}th{background:var(--pale);font-size:12px;text-transform:uppercase}
+.bar{height:8px;background:var(--pale);border-radius:99px;overflow:hidden;min-width:90px}.bar i{display:block;height:100%;background:var(--p);transition:width .8s}
+.foot{background:linear-gradient(135deg,#0b3b4a,#2b2a78);color:#e6f4ff;padding:44px 0}.fg{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}.foot p{margin:5px 0;color:#bcd2ea;font-size:13px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hg,.two,.sr,.dirs,.dash,.vg,.opts{grid-template-columns:1fr}}
+@media(max-width:700px){.links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--bg);padding:10px 4%;border-bottom:1px solid var(--line)}.links.open{display:flex}.mb{display:inline-flex;padding:10px 14px}.grid{grid-template-columns:1fr}.sec{padding:52px 0}.app{padding:22px}.brand span.t{display:none}}
+.logo,.core,.bub,.lt,.stat em,.ctr .big,.vb em,.dir em,h1 span{animation:none!important}.btn::after{display:none}
+.em{width:1em;height:1em;display:inline-block;vertical-align:-.14em;overflow:visible}
+.pill{display:inline-block;font-size:12px;background:var(--pale);color:var(--muted);border-radius:99px;padding:4px 10px;margin-top:12px}
+.vc textarea{min-height:64px;margin:10px 0 8px}.vl{display:grid;gap:6px;margin-top:10px}.vl h4{margin:0 0 2px}.vl p{margin:0;background:var(--pale);border-radius:12px;padding:8px 12px;font-size:13px}.vl small{display:block;color:var(--muted);font-size:11px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="e-talk" viewBox="0 0 48 48"><circle cx="22" cy="26" r="18" fill="#ffc23d"/><ellipse cx="15" cy="22" rx="2.6" ry="3.2" fill="#14284b"><animate attributeName="ry" values="3.2;3.2;.3;3.2" keyTimes="0;.9;.95;1" dur="3.5s" repeatCount="indefinite"/></ellipse><ellipse cx="29" cy="22" rx="2.6" ry="3.2" fill="#14284b"><animate attributeName="ry" values="3.2;3.2;.3;3.2" keyTimes="0;.9;.95;1" dur="3.5s" repeatCount="indefinite"/></ellipse><ellipse cx="22" cy="34" rx="6" ry="2" fill="#c2352b"><animate attributeName="ry" values="2;7;3;6;2" dur="1.2s" repeatCount="indefinite"/><animate attributeName="rx" values="6;4.5;6;5;6" dur="1.2s" repeatCount="indefinite"/></ellipse><path d="M41 18q3 3 0 6M44 14q6 6 0 14" stroke="#0fa3a3" stroke-width="2.4" fill="none" stroke-linecap="round"><animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/></path></symbol>
+<symbol id="e-mic" viewBox="0 0 48 48"><circle cx="24" cy="16" r="8" fill="none" stroke="#3ccfcf" stroke-width="2"><animate attributeName="r" values="8;24" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.8s" repeatCount="indefinite"/></circle><rect x="16" y="4" width="16" height="24" rx="8" fill="#ff7a6b"/><path d="M10 22a14 14 0 0 0 28 0M24 36v8M16 44h16" stroke="#7c6cf0" stroke-width="3.2" stroke-linecap="round" fill="none"/></symbol>
+<symbol id="e-puz" viewBox="0 0 48 48"><path d="M6 18h10a4 4 0 1 1 8 0h10v10a4 4 0 1 0 0 8v8H6z" fill="#7c6cf0"/><path d="M24 4h18v14h-8a4 4 0 1 0-8 0h-2z" fill="#0fa3a3"><animateTransform attributeName="transform" type="translate" values="0 0;3 -3;0 0" dur="2s" repeatCount="indefinite"/></path></symbol>
+<symbol id="e-hand" viewBox="0 0 48 48"><circle cx="12" cy="24" r="9" fill="#ffc23d"><animate attributeName="cx" values="12;17;12" dur="1.6s" repeatCount="indefinite"/></circle><circle cx="36" cy="24" r="9" fill="#ff7a6b"><animate attributeName="cx" values="36;31;36" dur="1.6s" repeatCount="indefinite"/></circle><path d="M20 30q4 4 8 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="e-star" viewBox="0 0 48 48"><g><animateTransform attributeName="transform" type="rotate" values="-12 24 24;12 24 24;-12 24 24" dur="2.4s" repeatCount="indefinite"/><path d="M24 4l6 13 14 2-10 10 3 14-13-7-13 7 3-14L4 19l14-2z" fill="#ffc23d"/></g><circle cx="24" cy="24" r="3" fill="#fff"><animate attributeName="opacity" values=".2;1;.2" dur="1.6s" repeatCount="indefinite"/></circle></symbol>
+<symbol id="e-spk" viewBox="0 0 48 48"><path d="M22 3c1.5 11 4 15 14 20-10 5-12.5 9-14 20-1.5-11-4-15-14-20 10-5 12.5-9 14-20z" fill="#ffc23d"><animate attributeName="opacity" values="1;.3;1" dur="1.8s" repeatCount="indefinite"/></path><path d="M38 28c.6 4 1.5 5.5 5 7-3.5 1.5-4.4 3-5 7-.6-4-1.5-5.5-5-7 3.5-1.5 4.4-3 5-7z" fill="#ff7a6b"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></path></symbol>
+<symbol id="e-book" viewBox="0 0 48 48"><rect x="6" y="10" width="11" height="30" rx="3" fill="#7c6cf0"/><rect x="19" y="6" width="11" height="34" rx="3" fill="#0fa3a3"><animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="2s" repeatCount="indefinite"/></rect><rect x="32" y="13" width="10" height="27" rx="3" fill="#ffc23d" transform="rotate(8 37 27)"/></symbol>
+<symbol id="e-tng" viewBox="0 0 48 48"><g><animateTransform attributeName="transform" type="rotate" values="-10 24 16;10 24 16;-10 24 16" dur="1.4s" repeatCount="indefinite"/><path d="M16 16h16v16a8 8 0 0 1-16 0z" fill="#ff8fa3"/><path d="M24 20v10" stroke="#e0607a" stroke-width="2" stroke-linecap="round"/></g><path d="M4 14q20-12 40 0q-20 9-40 0z" fill="#e0453a"/></symbol>
+<symbol id="e-doc" viewBox="0 0 48 48"><circle cx="24" cy="26" r="18" fill="#ffd9a8"/><path d="M6 22a18 18 0 0 1 36 0z" fill="#0fa3a3"/><ellipse cx="17" cy="29" rx="2.2" ry="2.8" fill="#14284b"><animate attributeName="ry" values="2.8;2.8;.3;2.8" keyTimes="0;.9;.95;1" dur="3s" repeatCount="indefinite"/></ellipse><ellipse cx="31" cy="29" rx="2.2" ry="2.8" fill="#14284b"><animate attributeName="ry" values="2.8;2.8;.3;2.8" keyTimes="0;.9;.95;1" dur="3s" repeatCount="indefinite"/></ellipse><path d="M18 37q6 5 12 0" stroke="#14284b" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M24 8v8M20 12h8" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="e-chart" viewBox="0 0 48 48"><rect x="6" y="28" width="8" height="14" rx="2.5" fill="#bfeeee"><animate attributeName="height" values="6;14;14;6" dur="3s" repeatCount="indefinite"/><animate attributeName="y" values="36;28;28;36" dur="3s" repeatCount="indefinite"/></rect><rect x="19" y="20" width="8" height="22" rx="2.5" fill="#3ccfcf"><animate attributeName="height" values="8;22;22;8" dur="3s" begin=".3s" repeatCount="indefinite"/><animate attributeName="y" values="34;20;20;34" dur="3s" begin=".3s" repeatCount="indefinite"/></rect><rect x="32" y="12" width="8" height="30" rx="2.5" fill="#0fa3a3"><animate attributeName="height" values="10;30;30;10" dur="3s" begin=".6s" repeatCount="indefinite"/><animate attributeName="y" values="32;12;12;32" dur="3s" begin=".6s" repeatCount="indefinite"/></rect></symbol>
+<symbol id="e-warn" viewBox="0 0 48 48"><path d="M24 6L44 40H4z" fill="#ffc23d" stroke="#ffc23d" stroke-width="4" stroke-linejoin="round"><animate attributeName="opacity" values="1;.55;1" dur="1.6s" repeatCount="indefinite"/></path><path d="M24 17v12" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="35" r="2.4" fill="#fff"/></symbol>
+<symbol id="e-flask" viewBox="0 0 48 48"><path d="M18 4h12v14l11 20a4 4 0 0 1-3.5 6h-27A4 4 0 0 1 7 38l11-20z" fill="#e6f7f7" stroke="#0fa3a3" stroke-width="3"/><path d="M13 32h22l4 7a2 2 0 0 1-1.7 3H10.7A2 2 0 0 1 9 39z" fill="#0fa3a3"/><circle cx="22" cy="34" r="2" fill="#fff"><animate attributeName="cy" values="36;18" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/></circle><circle cx="28" cy="36" r="1.6" fill="#fff"><animate attributeName="cy" values="36;20" dur="2s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2s" begin=".8s" repeatCount="indefinite"/></circle></symbol>
+<symbol id="e-chat" viewBox="0 0 48 48"><path d="M8 8h32a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H22l-9 8v-8H8a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z" fill="#0fa3a3"/><circle cx="15" cy="22" r="2.8" fill="#fff"><animate attributeName="cy" values="22;17;22" dur="1s" repeatCount="indefinite"/></circle><circle cx="24" cy="22" r="2.8" fill="#fff"><animate attributeName="cy" values="22;17;22" dur="1s" begin=".2s" repeatCount="indefinite"/></circle><circle cx="33" cy="22" r="2.8" fill="#fff"><animate attributeName="cy" values="22;17;22" dur="1s" begin=".4s" repeatCount="indefinite"/></circle></symbol>
+<symbol id="e-lock" viewBox="0 0 48 48"><g><animateTransform attributeName="transform" type="rotate" values="0 24 30;-5 24 30;5 24 30;0 24 30" dur="3s" repeatCount="indefinite"/><rect x="9" y="21" width="30" height="22" rx="6" fill="#9aa3c4"/><path d="M16 21v-6a8 8 0 0 1 16 0v6" stroke="#6b7497" stroke-width="4" fill="none"/><circle cx="24" cy="32" r="3" fill="#fff"/></g></symbol>
+<symbol id="e-play" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#7c6cf0"><animate attributeName="r" values="20;17;20" dur="1.6s" repeatCount="indefinite"/></circle><path d="M19 15l16 9-16 9z" fill="#fff"/></symbol>
+<symbol id="e-time" viewBox="0 0 48 48"><circle cx="24" cy="26" r="17" fill="#fff" stroke="#7c6cf0" stroke-width="4"/><rect x="20" y="3" width="8" height="5" rx="2" fill="#7c6cf0"/><line x1="24" y1="26" x2="24" y2="15" stroke="#ff7a6b" stroke-width="3.5" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 24 26" to="360 24 26" dur="4s" repeatCount="indefinite"/></line></symbol>
+<symbol id="e-heart" viewBox="0 0 48 48"><g transform="translate(24 24)"><g><animateTransform attributeName="transform" type="scale" values="1;1.18;1" dur="1.2s" repeatCount="indefinite"/><path d="M0 18C-18 6-18-11-7-13c4-.7 7 2 7 5 0-3 3-5.7 7-5C18-11 18 6 0 18z" fill="#8d78f1"/></g></g></symbol>
+<symbol id="e-house" viewBox="0 0 48 48"><rect x="34" y="10" width="5" height="9" fill="#e0453a"/><circle cx="36" cy="8" r="3" fill="#cfd8e3"><animate attributeName="cy" values="8;-4" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="2s" repeatCount="indefinite"/></circle><path d="M24 5L4 22h6v19h28V22h6z" fill="#ffc23d"/><path d="M24 5L4 22h6l14-12 14 12h6z" fill="#ff7a6b"/><rect x="20" y="28" width="9" height="13" rx="2.5" fill="#fff"/></symbol>
+<symbol id="e-ok" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="#35c9a0"/><path d="M14 25l7 7 13-14" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="32" stroke-dashoffset="32"><animate attributeName="stroke-dashoffset" values="32;0;0;32" keyTimes="0;.3;.8;1" dur="3s" repeatCount="indefinite"/></path></symbol>
+<symbol id="e-dice" viewBox="0 0 48 48"><g><animateTransform attributeName="transform" type="rotate" values="-12 24 24;12 24 24;-12 24 24" dur="2s" repeatCount="indefinite"/><rect x="7" y="7" width="34" height="34" rx="9" fill="#ff7a6b"/><g fill="#fff"><circle cx="16" cy="16" r="3"/><circle cx="32" cy="16" r="3"/><circle cx="24" cy="24" r="3"/><circle cx="16" cy="32" r="3"/><circle cx="32" cy="32" r="3"/></g></g></symbol>
+<symbol id="e-note" viewBox="0 0 48 48"><rect x="6" y="6" width="28" height="36" rx="5" fill="#fff" stroke="#7c6cf0" stroke-width="3"/><path d="M12 16h16M12 23h16M12 30h9" stroke="#7c6cf0" stroke-width="2.8" stroke-linecap="round"/><path d="M42 18l-14 14-2 7 7-2 14-14z" fill="#ffc23d"><animateTransform attributeName="transform" type="translate" values="0 0;-4 4;0 0" dur="1.8s" repeatCount="indefinite"/></path></symbol>
+</defs></svg>
+<header class="top"><div class="wrap nav">
+<a class="brand" href="#bosh"><span class="logo">🗣️</span><span class="t" data-i="brand"></span></a>
+<nav class="links" id="links"><a href="#bosh" data-i="n1"></a><a href="#boshlash" data-i="n2"></a><a href="#haqida" data-i="n3"></a><a href="#kutubxona" data-i="n6"></a><a href="#natija" data-i="n4"></a><a href="#reja" data-i="n5"></a></nav>
+<div style="display:flex;gap:8px;align-items:center"><div class="lang"><button data-l="uz">UZ</button><button data-l="ru">RU</button></div><button class="btn s mb" id="mb">☰</button></div>
+</div></header>
+<main>
+<section class="hero" id="bosh"><div class="wrap hg">
+<div><span class="eb">✨ <span data-i="eb"></span></span><h1 data-i="h1"></h1><p class="l" data-i="hp"></p>
+<div class="acts"><a class="btn" href="#boshlash" data-i="b1"></a><a class="btn s" href="#haqida" data-i="b2"></a></div>
+<p class="sm"><span class="badge">🧪 <span data-i="test"></span></span> <span data-i="tn"></span></p></div>
+<div class="art">
+<div class="core">🎤</div>
+<span class="lt" style="top:2%;right:10%;color:var(--co)">A</span><span class="lt" style="top:40%;left:-2%;color:var(--vio);animation-delay:-1s">Sh</span><span class="lt" style="bottom:18%;right:-2%;color:var(--sun);animation-delay:-2s">R</span><span class="lt" style="top:18%;left:30%;color:var(--p);animation-delay:-3s;font-size:24px">S</span>
+<div class="bub b1"><span id="ty"></span><i></i></div><div class="bub b2" data-i="bub"></div>
+<span class="lt" style="top:68%;left:6%">💜</span><span class="lt" style="top:3%;left:6%;font-size:28px">✨</span><span class="lt" style="bottom:2%;left:42%;font-size:30px">⭐</span></div>
+</div></section>
+<div class="wrap stats rv"><div class="sr">
+<div class="stat"><em>🧩</em><div><b data-i="s1t"></b><span data-i="s1d"></span></div></div>
+<div class="stat"><em style="animation-delay:-1s">🤝</em><div><b data-i="s2t"></b><span data-i="s2d"></span></div></div>
+<div class="stat"><em style="animation-delay:-2s">⭐</em><div><b data-i="s3t"></b><span data-i="s3d"></span></div></div></div></div>
+
+<section class="sec" id="boshlash"><div class="wrap"><div class="sh rv"><span class="tag" data-i="test"></span><h2 data-i="svh"></h2><p data-i="svp"></p></div><div class="app rv" id="app"></div></div></section>
+
+<section class="sec soft" id="haqida"><div class="wrap two">
+<div><div class="sh rv"><span class="tag" data-i="at"></span><h2 data-i="ah"></h2><p data-i="ap"></p></div>
+<div class="grid" style="grid-template-columns:1fr 1fr">
+<article class="card rv"><div class="ic">📚</div><h3 data-i="c1t"></h3><p data-i="c1d"></p></article>
+<article class="card rv"><div class="ic">👅</div><h3 data-i="c2t"></h3><p data-i="c2d"></p></article>
+<article class="card rv"><div class="ic">🧑‍⚕️</div><h3 data-i="c3t"></h3><p data-i="c3d"></p></article>
+<article class="card rv"><div class="ic">📈</div><h3 data-i="c4t"></h3><p data-i="c4d"></p></article></div></div>
+<div><div class="sh rv"><span class="tag" data-i="pt"></span><h2 data-i="ph"></h2><p data-i="pp"></p></div>
+<div class="steps">
+<div class="step rv"><span class="num">1</span><div><h3 data-i="t1t"></h3><p data-i="t1d"></p></div></div>
+<div class="step rv"><span class="num">2</span><div><h3 data-i="t2t"></h3><p data-i="t2d"></p></div></div>
+<div class="step rv"><span class="num">3</span><div><h3 data-i="t3t"></h3><p data-i="t3d"></p></div></div>
+<div class="step rv"><span class="num">4</span><div><h3 data-i="t4t"></h3><p data-i="t4d"></p></div></div></div>
+<p class="sm rv" style="margin-top:16px" data-i="note"></p></div>
+</div></section>
+
+<section class="sec" id="kutubxona"><div class="wrap"><div class="sh rv"><span class="tag" data-i="lbt"></span><h2 data-i="lbh"></h2><p data-i="lbp"></p></div><div class="grid">
+<article class="card rv"><div class="ic">💬</div><h3 data-i="l1t"></h3><p data-i="l1d"></p><span class="pill" data-i="lbs"></span></article>
+<article class="card rv"><div class="ic">🎲</div><h3 data-i="l2t"></h3><p data-i="l2d"></p><span class="pill" data-i="lbs"></span></article>
+<article class="card rv"><div class="ic">🏠</div><h3 data-i="l3t"></h3><p data-i="l3d"></p><span class="pill" data-i="lbs"></span></article>
+<article class="card rv"><div class="ic">📝</div><h3 data-i="l4t"></h3><p data-i="l4d"></p><span class="pill" data-i="lbs2"></span></article></div></div></section>
+
+<section class="sec" id="natija"><div class="wrap"><div class="sh rv"><span class="tag" data-i="rt"></span><h2 data-i="rh"></h2><p data-i="rp"></p></div><div id="dash" class="rv"></div></div></section>
+
+<section class="sec soft" id="reja"><div class="wrap two"><div class="sh rv"><span class="tag" data-i="mt"></span><h2 data-i="mh"></h2><p data-i="mp"></p></div>
+<div class="steps">
+<div class="step rv done"><span class="num">✓</span><div><h3 data-i="m1t"></h3><p data-i="m1d"></p></div></div>
+<div class="step rv"><span class="num">2</span><div><h3 data-i="m2t"></h3><p data-i="m2d"></p></div></div>
+<div class="step rv"><span class="num">3</span><div><h3 data-i="m3t"></h3><p data-i="m3d"></p></div></div>
+<div class="step rv"><span class="num">4</span><div><h3 data-i="m4t"></h3><p data-i="m4d"></p></div></div>
+<div class="step rv"><span class="num">5</span><div><h3 data-i="m5t"></h3><p data-i="m5d"></p></div></div></div></div></section>
+</main>
+<footer class="foot"><div class="wrap fg"><div><div class="brand">🗣️ <span data-i="brand2"></span></div><p data-i="slog"></p></div><div><strong data-i="au"></strong><p>Abdusattorova Mohizar Dilshodbek qizi</p><p data-i="auд"></p></div><div><strong data-i="ct"></strong><p data-i="cd"></p></div></div></footer>
+
+<script>
+var T={
+uz:{brand:"Imkoniyatlar<br>akademiyasi",brand2:"Imkoniyatlar akademiyasi",n1:"Bosh sahifa",n2:"So‘rovnoma",n3:"Loyiha",n4:"Natijalar",n5:"Yo‘l xaritasi",
+eb:"Logopediya va nutq rivojlanishi",h1:"Har bir bola <span>o‘z ovozini topadi!</span>",hp:"“Imkoniyatlar akademiyasi” — nutqida qiyinchiligi bor bolalar va ota-onalari uchun logopedik video darslar, amaliy tavsiyalar va mutaxassislar bilan hamkorlikni jamlagan elektron platforma konsepsiyasi.",
+b1:"So‘rovnomani boshlash ↗",b2:"Loyiha haqida",test:"Test rejimi",tn:"Natijalar hozircha faqat shu qurilmada saqlanadi.",bub:"Kichik qadam — katta ovoz!",
+s1t:"10 savollik so‘rovnoma",s1d:"oilaga mos video darslar tanlanadi",s2t:"Oila + logoped",s2d:"hamkorlikka asoslangan yondashuv",s3t:"Ota-ona baholaydi",s3d:"har bir video 5 balli tizimda",
+svh:"So‘rovnoma va video darslar",svp:"Avval farzandingiz haqida qisqa so‘rovnomani to‘ldiring, so‘ng yo‘nalishni tanlang — shu yo‘nalishdagi video darslar ochiladi.",
+at:"Loyiha haqida",ah:"Platforma nimaga yordam beradi?",ap:"Dastlabki versiya ota-onalar uchun ishonchli, sodda va qulay logopedik materiallarni bir joyda jamlaydi.",
+c1t:"Metodik materiallar"git init,c1d:"Kundalik hayotga mos tavsiyalar va mashqlar.",c2t:"Artikulyatsiya o‘yinlari",c2d:"Til, lab va nafas mashqlari o‘yin shaklida.",c3t:"Mutaxassis hamkorligi",c3d:"Logoped va defektolog bilan birga rejalashtirish.",c4t:"Rivojlanishni kuzatish",c4d:"Ota-ona kuzatuvlari va keyingi qadamlar.",
+pt:"Ota-onalar uchun",ph:"Ota-onalar maktabi",pp:"Kundalik vaziyatlarda muloqotni qo‘llab-quvvatlash bo‘yicha umumiy tavsiyalar.",
+t1t:"Bolaning qiziqishidan boshlang",t1d:"U tanlagan o‘yinga qo‘shiling, e’tiborini majburan burmang.",t2t:"Qisqa va aniq gapiring",t2d:"Sodda jumlalar ishlating, javob uchun vaqt qoldiring.",t3t:"Har bir urinishni qadrlang",t3d:"So‘z, imo-ishora, qarash yoki rasm — hammasi muloqot.",t4t:"Majburlamang",t4d:"Charchasa tanaffus qiling, kerak bo‘lsa mutaxassisga murojaat qiling.",n6:"Kutubxona",lbt:"Kutubxona",lbh:"Metodik kutubxona",lbp:"Dastlabki demo uchun namunaviy mavzular.",l1t:"Ijobiy muloqot",l1d:"Bolani tinglash, kutish va uning javobini e’tirof etish.",l2t:"O‘yin orqali navbat almashish",l2d:"Qisqa, xavfsiz va bolaning qiziqishiga mos o‘yinlar.",l3t:"Kundalik faoliyatdagi muloqot",l3d:"Ovqatlanish, kiyinish va o‘yin paytida sodda tanlovlar berish.",l4t:"Ota-ona kuzatuv kundaligi",l4d:"Qaysi mashg‘ulot sinab ko‘rilgani va fikrlarni yozib borish.",lbs:"Namuna mavzu",lbs2:"Shablon tayyorlanadi",vcp:"Bu video haqida izoh yozing (shaxsiy ma’lumot yozmang)",vsn:"Izohni yuborish",vcm:"Video izohlari",
+note:"⚠️ Materiallar umumiy ta’limiy tavsiya bo‘lib, tashxis yoki mutaxassis maslahatining o‘rnini bosmaydi.",
+rt:"Test natijalari",rh:"Test natijalari",rp:"So‘rovnomalar va video baholari. Ma’lumotlar faqat shu brauzerda saqlanadi.",
+mt:"Yo‘l xaritasi",mh:"Testdan ommaviy ilovagacha",mp:"Maqsad: videolarning o‘rtacha bahosi kamida 4.0 / 5.",
+m1t:"Test rejimi: 2 yo‘nalish",m1d:"Duduqlanish va nutq rivojlanishi, 10 savollik so‘rovnoma.",m2t:"Video darslarni joylash",m2d:"Videolar videos/ papkasiga qo‘yiladi.",m3t:"Ota-onalar bahosi",m3d:"Test ishtirokchilari videolarni baholaydi.",m4t:"Mutaxassis tekshiruvi",m4d:"Kontent ko‘rib chiqiladi, maxfiylik siyosati tayyorlanadi.",m5t:"Ruxsat va ilova",m5d:"Tegishli ruxsatlardan so‘ng ilova ishga tushadi.",
+slog:"Har bir bola — o‘z imkoniyatiga ega!",au:"Loyiha muallifi",auд:"Elektron platforma konsepsiyasi va tajriba-sinov loyihasi",ct:"Aloqa",cd:"Rasmiy aloqa ma’lumotlari keyingi versiyada qo‘shiladi.",
+i1:"Farzandingizga mos video darslarni topamiz",i2:"10 ta qisqa savol. Ism, telefon yoki tibbiy ma’lumot so‘ralmaydi. Natija tashxis emas.",go:"Boshlash ✨",
+qn:"Savol",bk:"← Orqaga",rd:"Tayyor! Endi yo‘nalishni tanlang",pk:"Qaysi yo‘nalish bo‘yicha video darslar kerak?",mt2:"Javoblarga mos",soon:"Tez orada",oth:"Boshqa yo‘nalishlar",othd:"Keyingi versiyalarda qo‘shiladi.",chg:"← Javoblarni o‘zgartirish",
+dr:"Yo‘nalish",tp:"Sizga mos tavsiyalar",vd:"Video darslar",nv:"Video tez orada joylanadi",pl:"Platformani baholang",rate:"Baholang",thx:"Rahmat!",cm:"Nima yoqdi? Nimani yaxshilash kerak? (shaxsiy ma’lumot yozmang)",snd:"Fikrni yuborish",sav:"Rahmat! Fikringiz saqlandi.",ag:"↺ Qayta boshlash",
+k1:"to‘ldirilgan so‘rovnomalar",k2:"video baholari",k3:"o‘rtacha baho (maqsad: 4.0+)",th:["Video","Tanlagan oilalar","Baholar","O‘rtacha"],csv:"CSV yuklab olish",clr:"Natijalarni tozalash",cf:"Barcha natijalar o‘chirilsinmi?",
+tp1:"Ekran vaqti uzoq. Uni bosqichma-bosqich kamaytirib, birgalikdagi qisqa o‘yinlarni qo‘shing.",tp2:"Telefon/multfilm o‘rniga bolaning qiziqishiga mos birgalikdagi o‘yin taklif qiling.",tp3:"Logoped yoki defektolog bilan maslahatlashish foydali. Videolar uning o‘rnini bosmaydi.",tp4:"Kuniga 10 daqiqalik muntazam mashg‘ulot ham foydali.",tp5:"Ko‘cha yoki mehmonda qiynalsa, uyda oldindan rol o‘ynab mashq qiling.",tp6:"Bolani shoshirmang, har bir urinishini qadrlang.",
+dirs:[["Duduqlanish","Takrorlash, to‘xtab qolish bilan ishlash."],["Nutq rivojlanishining kechikishi","So‘z boyligini o‘yin orqali oshirish."]],
+vids:[["1-dars: Duduqlanish bilan uyda ishlash","Muloqot va sabr bo‘yicha tavsiyalar."],["2-dars: Bola gapirganda nima qilish kerak?","Kundalik qo‘llab-quvvatlash usullari."],["1-dars: O‘yin orqali so‘z boyligi","Uyda sodda mashqlar."],["2-dars: Kundalik hayotda muloqot","Ovqatlanish va kiyinishda gapirishga undash."]],
+Q:[["Farzandingiz yoshi nechida?",["2–3 yosh","4–5 yosh","6–7 yosh","8–10 yosh","11+ yosh"]],["Uyda ko‘proq nima bilan shug‘ullanadi?",["O‘yinchoq","Telefon/planshet","Multfilm/TV","Chizish, qurish","Tashqarida o‘yin"]],["Kuniga ekran oldida qancha vaqt o‘tkazadi?",["1 soatdan kam","1–2 soat","2–4 soat","4 soatdan ko‘p"]],["Muloqotda o‘zini qanday tutadi?",["O‘zi boshlaydi","Savolga javob beradi","Imo-ishora ishlatadi","Kam kirishadi"]],["Nutqi sizga qanchalik tushunarli?",["To‘liq","Asosan","Qisman","Qiyin"]],["Tovush yoki so‘zni takrorlash, to‘xtab qolish uchraydimi?",["Yo‘q","Ba’zan","Tez-tez","Deyarli har gapda"]],["Mutaxassis ko‘rigidan o‘tganmi?",["Ha, davom etmoqda","Ha, to‘xtagan","Yo‘q","Rejalashtiryapmiz"]],["Uyda kuniga qancha vaqt ajrata olasiz?",["10 daqiqagacha","10–20 daqiqa","20–40 daqiqa","40+ daqiqa"]],["Qaysi vaziyatda ko‘proq qiynaladi?",["Ovqat/kiyinish","O‘yin","Ko‘cha/bog‘cha/mehmon","Gapirishga undalganda"]],["Asosiy maqsadingiz?",["Gapirishni rivojlantirish","Ishonch bilan gapirish","Muloqot ko‘nikmasi","O‘yin orqali o‘rgatish"]]]},
+ru:{brand:"Академия<br>возможностей",brand2:"Академия возможностей",n1:"Главная",n2:"Опросник",n3:"О проекте",n4:"Результаты",n5:"Дорожная карта",
+eb:"Логопедия и развитие речи",h1:"У каждого ребёнка <span>есть свой голос!</span>",hp:"«Академия возможностей» — концепция электронной платформы с логопедическими видеоуроками, практическими советами и сотрудничеством со специалистами для детей с речевыми трудностями и их родителей.",
+b1:"Начать опрос ↗",b2:"О проекте",test:"Тестовый режим",tn:"Пока результаты хранятся только на этом устройстве.",bub:"Маленький шаг — громкий голос!",
+s1t:"Опрос из 10 вопросов",s1d:"подбираем видеоуроки для семьи",s2t:"Семья + логопед",s2d:"подход, основанный на сотрудничестве",s3t:"Оценивают родители",s3d:"каждое видео по 5-балльной шкале",
+svh:"Опрос и видеоуроки",svp:"Сначала ответьте на короткие вопросы о ребёнке, затем выберите направление — откроются видеоуроки.",
+at:"О проекте",ah:"Чем поможет платформа?",ap:"Первая версия собирает в одном месте надёжные, простые и удобные логопедические материалы для родителей.",
+c1t:"Методические материалы",c1d:"Советы и упражнения для повседневной жизни.",c2t:"Артикуляционные игры",c2d:"Упражнения для языка, губ и дыхания в форме игры.",c3t:"Работа со специалистами",c3d:"Совместное планирование с логопедом и дефектологом.",c4t:"Наблюдение за развитием",c4d:"Наблюдения родителей и следующие шаги.",
+pt:"Для родителей",ph:"Школа родителей",pp:"Общие советы по поддержке общения в повседневных ситуациях.",
+t1t:"Начните с интереса ребёнка",t1d:"Присоединяйтесь к выбранной им игре, не переключайте внимание насильно.",t2t:"Говорите коротко и ясно",t2d:"Используйте простые фразы и дайте время на ответ.",t3t:"Ценьте каждую попытку",t3d:"Слово, жест, взгляд или картинка — всё это общение.",t4t:"Не принуждайте",t4d:"Если устал — сделайте паузу, при необходимости обратитесь к специалисту.",n6:"Библиотека",lbt:"Библиотека",lbh:"Методическая библиотека",lbp:"Примерные темы для первой демо-версии.",l1t:"Позитивное общение",l1d:"Слушать ребёнка, ждать и признавать его ответ.",l2t:"Очерёдность в игре",l2d:"Короткие, безопасные игры по интересам ребёнка.",l3t:"Общение в быту",l3d:"Простой выбор во время еды, одевания и игры.",l4t:"Дневник наблюдений родителя",l4d:"Записывать, какие занятия пробовали, и свои мысли.",lbs:"Примерная тема",lbs2:"Шаблон готовится",vcp:"Напишите комментарий к этому видео (без личных данных)",vsn:"Отправить комментарий",vcm:"Комментарии к видео",
+note:"⚠️ Материалы — общие образовательные рекомендации и не заменяют диагноз или консультацию специалиста.",
+rt:"Результаты теста",rh:"Результаты теста",rp:"Опросы и оценки видео. Данные хранятся только в этом браузере.",
+mt:"Дорожная карта",mh:"От теста до массового приложения",mp:"Цель: средняя оценка видео не ниже 4.0 / 5.",
+m1t:"Тест: 2 направления",m1d:"Заикание и развитие речи, опрос из 10 вопросов.",m2t:"Размещение видеоуроков",m2d:"Видео кладутся в папку videos/.",m3t:"Оценка родителей",m3d:"Участники теста оценивают видео.",m4t:"Проверка специалистом",m4d:"Контент проверяется, готовится политика конфиденциальности.",m5t:"Разрешения и приложение",m5d:"После получения разрешений запускается приложение.",
+slog:"У каждого ребёнка есть свои возможности!",au:"Автор проекта",auд:"Концепция электронной платформы и экспериментальный проект",ct:"Контакты",cd:"Официальные контакты будут добавлены в следующей версии.",
+i1:"Подберём видеоуроки для вашего ребёнка",i2:"10 коротких вопросов. Имя, телефон и медицинские данные не запрашиваются. Результат — не диагноз.",go:"Начать ✨",
+qn:"Вопрос",bk:"← Назад",rd:"Готово! Теперь выберите направление",pk:"Какое направление видеоуроков нужно?",mt2:"Подходит по ответам",soon:"Скоро",oth:"Другие направления",othd:"Появятся в следующих версиях.",chg:"← Изменить ответы",
+dr:"Направление",tp:"Рекомендации для вас",vd:"Видеоуроки",nv:"Видео скоро появится",pl:"Оцените платформу",rate:"Оцените",thx:"Спасибо!",cm:"Что понравилось? Что улучшить? (не указывайте личные данные)",snd:"Отправить отзыв",sav:"Спасибо! Отзыв сохранён.",ag:"↺ Начать заново",
+k1:"заполненных опросов",k2:"оценок видео",k3:"средняя оценка (цель: 4.0+)",th:["Видео","Выбрали семьи","Оценок","Средняя"],csv:"Скачать CSV",clr:"Очистить результаты",cf:"Удалить все результаты?",
+tp1:"Много экранного времени. Сокращайте постепенно, добавляя короткие совместные игры.",tp2:"Вместо телефона/мультфильмов предложите совместную игру по интересам ребёнка.",tp3:"Полезно проконсультироваться с логопедом или дефектологом. Видео его не заменяют.",tp4:"Даже регулярные 10 минут в день полезны.",tp5:"Если трудно на улице или в гостях — заранее отрепетируйте дома в ролевой игре.",tp6:"Не торопите ребёнка, цените каждую попытку.",
+dirs:[["Заикание","Работа с повторами и запинками."],["Задержка речевого развития","Расширение словаря через игру."]],
+vids:[["Урок 1: Основы работы с заиканием дома","Советы по общению и терпению."],["Урок 2: Что делать, когда ребёнок говорит?","Способы ежедневной поддержки."],["Урок 1: Словарь через игру","Простые упражнения дома."],["Урок 2: Общение в быту","Побуждение к речи при еде и одевании."]],
+Q:[["Сколько лет вашему ребёнку?",["2–3 года","4–5 лет","6–7 лет","8–10 лет","11+ лет"]],["Чем он больше занимается дома?",["Игрушки","Телефон/планшет","Мультфильмы/ТВ","Рисование, конструкторы","Подвижные игры на улице"]],["Сколько времени в день проводит перед экраном?",["Менее 1 часа","1–2 часа","2–4 часа","Более 4 часов"]],["Как ведёт себя в общении?",["Начинает сам","Отвечает на вопросы","Больше жестами","Редко вступает в общение"]],["Насколько понятна его речь?",["Полностью","В основном","Частично","С трудом"]],["Бывают повторы звуков/слов, запинки?",["Нет","Иногда","Часто","Почти в каждой фразе"]],["Был ли у специалиста?",["Да, продолжаем","Да, прекратили","Нет","Планируем"]],["Сколько времени в день можете заниматься дома?",["До 10 минут","10–20 минут","20–40 минут","40+ минут"]],["Когда ему сложнее всего?",["Еда/одевание","Игра","Улица/сад/гости","Когда просят говорить"]],["Ваша главная цель?",["Развить речь","Говорить уверенно","Навыки общения","Обучение через игру"]]]}};
+var DI=[{id:"duduq",ic:"💬",v:["duduq-1","duduq-2"]},{id:"nutq",ic:"🎤",v:["nutq-1","nutq-2"]}];
+var L="uz";try{L=localStorage.getItem("ia_lang")||"uz"}catch(e){}if(!T[L])L="uz";
+var st={i:0,a:[],dir:null,rt:{}},view="intro",app=document.getElementById("app");
+function t(k){return T[L][k]}
+function ld(){try{return JSON.parse(localStorage.getItem("ia_data"))||{s:[],r:[]}}catch(e){return{s:[],r:[]}}}
+function sv(d){try{localStorage.setItem("ia_data",JSON.stringify(d))}catch(e){}}
+function stars(id,v){var h='<div class="stars" data-id="'+id+'">';for(var i=1;i<=5;i++)h+='<button type="button" data-s="'+i+'" class="'+(v>=i?"on":"")+'">★</button>';return h+"<small>"+(v?t("thx")+" "+v+"/5":t("rate"))+"</small></div>"}
+function intro(){view="intro";app.innerHTML='<div class="ctr"><span class="big">🎙️</span><h3>'+t("i1")+"</h3><p>"+t("i2")+'</p><div class="row c"><button class="btn" id="go">'+t("go")+"</button></div></div>";document.getElementById("go").onclick=function(){st={i:0,a:[],dir:null,rt:{}};ques()}}
+function ques(){view="ques";var Q=T[L].Q,q=Q[st.i],h='<div class="prog"><i style="width:'+(st.i+1)/Q.length*100+'%"></i></div><div class="qn">'+t("qn")+" "+(st.i+1)+" / "+Q.length+"</div><h3>"+q[0]+'</h3><div class="opts">';q[1].forEach(function(o,k){h+='<button class="opt'+(st.a[st.i]===k?" sel":"")+'" data-k="'+k+'">'+o+"</button>"});h+='</div><div class="row">'+(st.i?'<button class="link" id="bk">'+t("bk")+"</button>":"")+"</div>";app.innerHTML=h;
+app.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){st.a[st.i]=+b.dataset.k;if(st.i<Q.length-1){st.i++;ques()}else dirs()}});var bk=document.getElementById("bk");if(bk)bk.onclick=function(){st.i--;ques()}}
+function rec(){if(st.a[5]>=2)return"duduq";if(st.a[4]>=2)return"nutq";return null}
+function dirs(){view="dirs";var r=rec(),h='<div class="prog"><i style="width:100%"></i></div><div class="qn">'+t("rd")+"</div><h3>"+t("pk")+'</h3><div class="dirs">';DI.forEach(function(d,i){h+='<button class="dir" data-d="'+d.id+'">'+(r===d.id?'<span class="badge">'+t("mt2")+"</span>":"")+"<em>"+d.ic+"</em><b>"+t("dirs")[i][0]+'</b><span class="d">'+t("dirs")[i][1]+"</span></button>"});h+='<div class="dir lock"><span class="badge">'+t("soon")+"</span><em>🔒</em><b>"+t("oth")+'</b><span class="d">'+t("othd")+'</span></div></div><div class="row"><button class="link" id="bk">'+t("chg")+"</button></div>";app.innerHTML=h;
+app.querySelectorAll("[data-d]").forEach(function(b){b.onclick=function(){st.dir=b.dataset.d;var d=ld();d.s.push({t:Date.now(),a:st.a,dir:st.dir});sv(d);res();dash()}});document.getElementById("bk").onclick=function(){st.i=T[L].Q.length-1;ques()}}
+function tips(){var a=st.a,x=[];if(a[2]>=2)x.push(["⏱️","tp1"]);if(a[1]===1||a[1]===2)x.push(["💜","tp2"]);if(a[6]===1||a[6]===2)x.push(["🧑‍⚕️","tp3"]);if(a[7]===0)x.push(["✨","tp4"]);if(a[8]===2)x.push(["🏠","tp5"]);x.push(["⭐","tp6"]);return x}
+function res(){view="res";var di=DI.map(function(d){return d.id}).indexOf(st.dir),D=DI[di],h='<div class="qn"><span class="badge">'+t("test")+"</span> "+t("dr")+": "+t("dirs")[di][0]+"</div><h3>"+t("tp")+'</h3><ul class="tips">';tips().forEach(function(x){h+="<li><em>"+x[0]+"</em><span>"+t(x[1])+"</span></li>"});h+="</ul><h3>"+t("vd")+'</h3><div class="vg">';
+D.v.forEach(function(id,k){var vi=t("vids")[di*2+k];h+='<div class="vid"><div class="vb"><div><em>▶️</em>'+t("nv")+'</div></div><div class="vi"><h4>'+vi[0]+"</h4><p>"+vi[1]+"</p>"+stars(id,st.rt[id]||0)+vcbox(id)+"</div></div>"});
+h+='</div><div class="fb"><h4>'+t("pl")+"</h4>"+stars("platform",st.rt.platform||0)+'<textarea id="cm" placeholder="'+t("cm")+'"></textarea><button class="btn" id="sf">'+t("snd")+'</button> <span class="sm" id="fm"></span></div><div class="row"><button class="link" id="again">'+t("ag")+"</button></div>";app.innerHTML=h;bindStars();bindVC();
+document.getElementById("sf").onclick=function(){var d=ld();d.r.push({t:Date.now(),v:"comment",s:st.rt.platform||0,c:document.getElementById("cm").value});sv(d);document.getElementById("fm").textContent=t("sav");dash()};document.getElementById("again").onclick=intro}
+function bindStars(){app.querySelectorAll(".stars").forEach(function(w){w.querySelectorAll("button").forEach(function(b){b.onclick=function(){var id=w.dataset.id,n=+b.dataset.s;st.rt[id]=n;st.sid=st.sid||Date.now();var d=ld();d.r=d.r.filter(function(x){return!(x.sid===st.sid&&x.v===id)});d.r.push({t:Date.now(),v:id,s:n,sid:st.sid});sv(d);w.outerHTML=stars(id,n);bindStars();dash()}})})}
+function av(a){return a.length?a.reduce(function(p,c){return p+c},0)/a.length:0}
+function dash(){var d=ld(),el=document.getElementById("dash"),by={},all=[],cnt={};d.r.forEach(function(x){if(x.v==="comment"||!x.s)return;(by[x.v]=by[x.v]||[]).push(x.s);if(x.v!=="platform")all.push(x.s)});d.s.forEach(function(x){cnt[x.dir]=(cnt[x.dir]||0)+1});var m=av(all),th=t("th");
+var h='<div class="dash"><div class="kpi"><b>'+d.s.length+"</b><span>"+t("k1")+'</span></div><div class="kpi"><b>'+all.length+"</b><span>"+t("k2")+'</span></div><div class="kpi"><b>'+(all.length?m.toFixed(1):"—")+" / 5</b><span>"+t("k3")+" "+(all.length&&m>=4?"✅":"")+'</span></div></div><div class="tw"><table><tr><th>'+th.join("</th><th>")+"</th></tr>";
+DI.forEach(function(D,di){D.v.forEach(function(id,k){var a=by[id]||[],x=av(a);h+="<tr><td>"+t("vids")[di*2+k][0]+"</td><td>"+(cnt[D.id]||0)+"</td><td>"+a.length+'</td><td><div class="bar"><i style="width:'+x/5*100+'%"></i></div>'+(a.length?x.toFixed(1):"—")+"</td></tr>"})});
+h+="</table></div>"+dcm(d)+'<div class="row"><button class="btn s" id="csv">'+t("csv")+'</button><button class="link" id="clr">'+t("clr")+"</button></div>";el.innerHTML=h;
+document.getElementById("csv").onclick=function(){var d=ld(),R=["type,time,key,value"];function q(x){return'"'+String(x==null?"":x).replace(/"/g,'""')+'"'}d.s.forEach(function(x){R.push(["survey",new Date(x.t).toISOString(),x.dir,x.a.join("|")].map(q).join(","))});d.r.forEach(function(x){var c=x.c!==undefined;R.push([c?"comment":"rating",new Date(x.t).toISOString(),x.v,c?x.s+" | "+x.c:x.s].map(q).join(","))});var b=new Blob(["\ufeff"+R.join("\n")],{type:"text/csv"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="test-results.csv";a.click()};
+document.getElementById("clr").onclick=function(){if(confirm(t("cf"))){sv({s:[],r:[]});dash()}}}
+function setLang(l){L=l;try{localStorage.setItem("ia_lang",l)}catch(e){}document.documentElement.lang=l;document.querySelectorAll("[data-i]").forEach(function(e){e.innerHTML=t(e.dataset.i)});document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});({intro:intro,ques:ques,dirs:dirs,res:res})[view]();dash();typeStart()}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+/* typing words */
+var W={uz:["Ma-ma","Sa-lom","A-bad","Rahmat!"],ru:["Ма-ма","При-вет","Ура!","Спасибо!"]},tm;
+function typeStart(){clearTimeout(tm);var el=document.getElementById("ty"),i=0,j=0,del=false;(function s(){var w=W[L][i];el.textContent=w.slice(0,j);if(!del&&j<w.length){j++;tm=setTimeout(s,170)}else if(!del){del=true;tm=setTimeout(s,1300)}else if(j>0){j--;tm=setTimeout(s,80)}else{del=false;i=(i+1)%W[L].length;tm=setTimeout(s,300)}})()}
+/* wave */
+
+/* nav + reveal + tilt */
+var mb=document.getElementById("mb"),lk=document.getElementById("links");mb.onclick=function(){lk.classList.toggle("open")};lk.onclick=function(){lk.classList.remove("open")};
+var els=document.querySelectorAll(".rv");if("IntersectionObserver"in window){var io=new IntersectionObserver(function(es){es.forEach(function(x,i){if(x.isIntersecting){setTimeout(function(){x.target.classList.add("on")},(i%4)*100);io.unobserve(x.target)}})},{threshold:.08});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add("on")});
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function vtitle(id){var r=id;DI.forEach(function(D,di){var k=D.v.indexOf(id);if(k>-1)r=t("vids")[di*2+k][0]});return r}
+function vlist(id){return ld().r.filter(function(x){return x.v==="vc:"+id}).reverse().map(function(x){return"<p>"+esc(x.c)+"<small>"+new Date(x.t).toLocaleDateString(L==="ru"?"ru-RU":"uz-UZ")+"</small></p>"}).join("")}
+function vcbox(id){return'<div class="vc"><textarea class="vt" data-id="'+id+'" placeholder="'+t("vcp")+'"></textarea><button class="btn s vsend" data-id="'+id+'">'+t("vsn")+'</button><div class="vl" id="vl-'+id+'">'+vlist(id)+"</div></div>"}
+function bindVC(){app.querySelectorAll(".vsend").forEach(function(b){b.onclick=function(){var id=b.dataset.id,ta=app.querySelector('.vt[data-id="'+id+'"]'),v=ta.value.trim();if(!v)return;var d=ld();d.r.push({t:Date.now(),v:"vc:"+id,s:0,c:v});sv(d);ta.value="";document.getElementById("vl-"+id).innerHTML=vlist(id);dash()}})}
+function dcm(d){var c=d.r.filter(function(x){return/^vc:/.test(x.v)}).slice(-10).reverse();if(!c.length)return"";return'<div class="vl" style="margin-top:16px"><h4>'+t("vcm")+"</h4>"+c.map(function(x){return"<p><b>"+esc(vtitle(x.v.slice(3)))+"</b><br>"+esc(x.c)+"</p>"}).join("")+"</div>"}
+/* animated emoji */
+var EM={"\u{1F5E3}":"talk","\u{1F3A4}":"mic","\u{1F399}":"mic","\u{1F9E9}":"puz","\u{1F91D}":"hand","\u2B50":"star","\u2728":"spk","\u{1F4DA}":"book","\u{1F445}":"tng","\u{1F9D1}\u200D\u2695":"doc","\u{1F4C8}":"chart","\u26A0":"warn","\u{1F9EA}":"flask","\u{1F4AC}":"chat","\u{1F512}":"lock","\u25B6":"play","\u23F1":"time","\u{1F49C}":"heart","\u{1F3E0}":"house","\u2705":"ok","\u{1F3B2}":"dice","\u{1F4DD}":"note"};
+var RS="("+Object.keys(EM).sort(function(a,b){return b.length-a.length}).join("|")+")\\uFE0F?",RT=new RegExp(RS,"u");
+function emo(root){var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),ns=[],n;while(n=w.nextNode()){if(RT.test(n.nodeValue)&&!/^(SCRIPT|STYLE|TEXTAREA)$/.test(n.parentNode.nodeName))ns.push(n)}
+ns.forEach(function(n){var R=new RegExp(RS,"gu"),s=n.nodeValue,f=document.createDocumentFragment(),l=0,m;while(m=R.exec(s)){f.appendChild(document.createTextNode(s.slice(l,m.index)));var v=document.createElementNS("http://www.w3.org/2000/svg","svg");v.setAttribute("class","em");v.innerHTML='<use href="#e-'+EM[m[1]]+'"/>';f.appendChild(v);l=m.index+m[0].length}f.appendChild(document.createTextNode(s.slice(l)));n.parentNode.replaceChild(f,n)})}
+var busy=false;new MutationObserver(function(){if(busy)return;busy=true;emo(document.body);busy=false}).observe(document.body,{childList:true,subtree:true});
+setLang(L);emo(document.body);
+</script>
+</body>
+</html>
